@@ -104,9 +104,54 @@ Por esse motivo, a calculadora demonstra apenas o comportamento visual previsto 
 
 </div>
 
-## Validação do código com W3
+## Validação do HTML com W3
 
+**Validação do arquivo `index.html`**:
+<img src="assets/figs/val1.png"/>
 
+**Validação do arquivo `login.html`**:
+<img src="assets/figs/val2.png"/>
+
+**Validação do arquivo `recuperar-senha.html`**:
+<img src="assets/figs/val4.png"/>
+
+**Validação do arquivo `principal.html`**:
+<img src="assets/figs/val3.png"/>
+
+**Validação do arquivo `sobre.html`**:
+<img src="assets/figs/val5.png"/>
+
+**Validação do arquivo `painel-usuario.html`**:
+<img src="assets/figs/val6.png" />
+
+## Validação do CSS com W3
+
+**Validação do arquivo `index.css`**:
+<img src="assets/figs/cssval1.png" />
+**Validação do arquivo `global.css`**:
+<img src="assets/figs/cssval2.png" />
+**Validação do arquivo `header.css`**:
+<img src="assets/figs/cssval3.png" />
+**Validação do arquivo `hero.css`**:
+<img src="assets/figs/cssval4.png" />
+**Validação do arquivo `dicas.css`**:
+<img src="assets/figs/cssval5.png" />
+**Validação do arquivo `destaques.css`**:
+<img src="assets/figs/cssval6.png" />
+**Validação do arquivo `utils.css`**:
+<img src="assets/figs/cssval7.png" />
+**Validação do arquivo `sobre.css`**:
+<img src="assets/figs/cssval8.png" />
+**Validação do arquivo `cadastro.css`**:
+<img src="assets/figs/cssval.png" />
+**Validação do arquivo `login.css`**:
+<img src="assets/figs/cssval9.png" />
+**Validação do arquivo `recuperacao.css`**:
+<img src="assets/figs/cssval10.png" />
+**Validação do arquivo `painel.css`**:
+<img src="assets/figs/cssval11.png" />
+**Validação do arquivo `footer.css`**:
+<img src="assets/figs/cssval12.png" />
 
 ## Desenvolvedor
 

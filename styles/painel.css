@@ -84,7 +84,7 @@
 #formCalculadora input[type="submit"] {
   margin-top: 2rem;
   width: 15rem;
-  transition: 0.5rem;
+  transition: 0.5s;
 }
 
 #formCalculadora input[type="submit"]:hover {
@@ -217,7 +217,7 @@
   font-weight: bold;
 }
 
-economia {
+.economia {
   font-weight: bold;
 }
 
@@ -227,13 +227,14 @@ economia {
   background-color: var(--verde-fundo);
 }
 
-.aviso h3 {
+.aviso h2 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
 
-.aviso h3 img {
+.aviso h2 img {
   width: 30px;
 }
