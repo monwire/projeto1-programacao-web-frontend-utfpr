@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>EcoWatt</title>
+  </head>
+  <body class="pagina-painel">
+    <header>
+      <div id="logo">
+        <img src="../assets/icons/logo.svg" alt="Logo EcoWatt" />EcoWatt
+      </div>
+      <div id="navContainer">
+        <nav>
+          <a href="principal.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="#dicas">Dicas</a>
+          <a href="#redesSociais">Contato</a>
+        </nav>
+
+        <a href="painel-usuario.html" id="botaoPainel"
+          >Michel Ferreira<img
+            src="../assets/icons/person-outline.svg"
+            alt="ícone de usuário"
+          />
+        </a>
+      </div>
+    </header>
+    <main id="painelUsuario">
+      <div id="cabecalhoPainel">
+        <a href="principal.html"
+          ><img
+            src="../assets/icons/arrow-back.svg"
+            alt="Ícone de seta para voltar" /></a
+        ><span>Olá, <strong>Michel Ferreira</strong></span>
+      </div>
+
+      <div id="calculadoraDisplay" class="radial-05">
+        <form id="formCalculadora">
+          <h1>
+            <img src="../assets/icons/logo.svg" alt="Logo EcoWatt" />Calculadora
+            de Consumo
+          </h1>
+          <p>
+            Descubra quanto de seus aparelhos consomem e veja como é possível
+            economizar. Informe os dados do aparelho e a tarifa da sua conta de
+            energia.
+          </p>
+
+          <label for="aparelho">Aparelho</label>
+          <select name="aparelho" id="aparelho" required>
+            <option value="" disable selected>Escolha o aparelho</option>
+            <option value="geladeira">Geladeira</option>
+            <option value="microondas">Micro-ondas</option>
+            <option value="tv">TV</option>
+            <option value="computador">Computador</option>
+            <option value="arcondicionado">Ar Condicionado</option>
+            <option value="fogao">Chuveiro</option>
+            <option value="aspirador">Aspirador de Pó</option>
+            <option value="outro">Outro</option>
+          </select>
+
+          <label for="descricao">Descrição do Aparelho</label>
+          <input
+            type="text"
+            name="descricao"
+            id="descricao"
+            placeholder="Descrição do aparelho (p. ex., Cafeteira)"
+          />
+
+          <label for="potencia">Potência (W)</label>
+          <input
+            type="number"
+            name="potencia"
+            id="potencia"
+            required
+            placeholder="Potência em Watts (p. ex., 150)"
+          />
+
+          <label for="horasUso">Horas de uso por dia</label>
+          <input
+            type="number"
+            name="horasUso"
+            id="horasUso"
+            required
+            placeholder="Horas de uso por dia (p. ex., 8, 12)"
+          />
+
+          <label for="tarifaUso">Tarifa de energia(R$/kWh)</label>
+          <input
+            type="text"
+            name="tarifaUso"
+            id="tarifaUso"
+            required
+            placeholder="R$ (p. ex., 0,85)"
+          />
+
+          <div class="aviso radial-05">
+            <h3>
+              <img
+                src="../assets/icons/information-circle.svg"
+                alt="ícone de informação"
+              />
+              Importante
+            </h3>
+            <p>
+              A tarifa deve ser informada uma única vez e aplicada ao conjunto
+              de aparelhos, salvo se você decidir permitir tarifas diferentes.
+            </p>
+          </div>
+
+          <button id="botaoCalcular" class="botao-verde">
+            <img
+              src="../assets/icons/calculator-white.svg"
+              alt="ícone de calculadora"
+              class="icone-botao"
+            />
+            Calcular
+          </button>
+        </form>
+        <div id="itens" class="radial-05">
+          <h2>Itens selecionados</h2>
+          <ul id="listaItens">
+            <li class="item-aparelho">
+              <div class="caracteristicas">
+                <div class="nome-aparelho">
+                  <img src="../assets/icons/cube.svg" alt="ícone de cubo" />
+                  <span>TV</span>
+                  <p><strong>Descrição: </strong> N/A</p>
+                </div>
+                <div class="potencia-aparelho">
+                  <img src="../assets/icons/flash.svg" alt="ícone de raio" />
+                  <span>100 W</span>
+                </div>
+
+                <div class="horas-uso">
+                  <img src="../assets/icons/time.svg" alt="ícone de relógio" />
+                  <span>5 horas</span>
+                </div>
+
+                <div class="tarifa-uso">
+                  <img src="../assets/icons/cash.svg" alt="ícone de dinheiro" />
+                  <span>R$ 0,85</span>
+                </div>
+              </div>
+
+              <div class="acoes">
+                <img src="../assets/icons/trash.svg" alt="ícone de lixeira" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="resultado" class="radial-05">
+        <h2>Resultado</h2>
+
+        <div class="grid-resultado">
+          <div class="consumo-diario-estimado card-resultado radial-05">
+            <div class="icone-res">
+              <img src="../assets/icons/home-darker.svg" alt="ícone de casa" />
+            </div>
+            <div class="texto-res">
+              <p>Consumo diário</p>
+              <span class="valor-res">0,5 kWh</span>
+            </div>
+          </div>
+
+          <div class="consumo-mensal-estimado card-resultado radial-05">
+            <div class="icone-res">
+              <img src="../assets/icons/analytics.svg" alt="ícone de gráfico" />
+            </div>
+            <div class="texto-res">
+              <p>Consumo mensal</p>
+              <span class="valor-res">15,00 kWh</span>
+            </div>
+          </div>
+
+          <div class="custo-diario-estimado card-resultado radial-05">
+            <div class="icone-res">
+              <img src="../assets/icons/cash.svg" alt="ícone de dinheiro" />
+            </div>
+            <div class="texto-res">
+              <p>Custo diário</p>
+              <span class="valor-res">R$ 0,43</span>
+            </div>
+          </div>
+
+          <div class="custo-mensal-estimado card-resultado radial-05">
+            <div class="icone-res">
+              <img src="../assets/icons/calendar.svg" alt="" />
+            </div>
+            <div class="texto-res">
+              <p>Custo mensal</p>
+              <span class="valor-res">R$ 12,75</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="dica" class="radial-05">
+          <div class="icone-res">
+            <img src="../assets/icons/bulb.svg" alt="ícone de lâmpada" />
+          </div>
+
+          <div class="texto-dica-resultado">
+            <span class="titulo-dica-resultado">Dica do EcoWatt</span>
+            <p>
+              Se você reduzir o uso da TV de 5 para 3 horas por dia, poderá
+              economizar aproximadamente
+              <economia>R$ 5,10 por mês</economia> e
+              <economia>R$ 61,20 por ano</economia>!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="footerContainer">
+        <div id="redesSociais">
+          <div id="logoFooter">
+            <img
+              src="../assets/icons/logo-branca.svg"
+              alt="Logo EcoWatt"
+              id="imgLogoFooter"
+            />EcoWatt
+          </div>
+          <p>Por um futuro mais sustentável</p>
+          <div id="redesSociaisIcones">
+            <a href="https://github.com/monwire" target="_blank"
+              ><img
+                src="../assets/icons/logo-github.svg"
+                alt="Ícone do GitHub"
+                class="icone-rede-social"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/michel-rodrigues-ferreira-ab06b2360/"
+              target="_blank"
+              ><img
+                src="../assets/icons/logo-linkedin.svg"
+                alt="Ícone do Linkedin"
+                class="icone-rede-social"
+            /></a>
+            <a
+              href="https://www.youtube.com/@MichelFerreira-o5y"
+              target="_blank"
+              ><img
+                src="../assets/icons/logo-youtube.svg"
+                alt="Ícone do YouTube"
+                class="icone-rede-social"
+            /></a>
+          </div>
+        </div>
+        <div id="linksFooter">
+          <ul>
+            <li><a href="principal.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li>
+              <a href="https://brasil.un.org/pt-br/sdgs" target="_blank"
+                >Objetivos do Desenvolvimento Sustentável (ODS)</a
+              >
+            </li>
+            <a
+              href="https://monwire.github.io/curriculum-vitae/"
+              target="_blank"
+              >Curriculum Vitae (CV)</a
+            >
+          </ul>
+        </div>
+        <div id="ods">
+          <img src="../assets/figs/ods-7.svg" alt="ODS7" class="radial-05" />
+          <p>ODS 7 - Energia Limpa e Acessível</p>
+        </div>
+      </div>
+
+      <span
+        >Desenvolvido por <strong>Michel Rodrigues Ferreira</strong>, 2026</span
+      >
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+.main-sobre {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 5rem;
+  margin-block: 2rem;
+  background-color: var(--branco);
+  padding: 5rem;
+}
+
+.main-sobre h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.main-sobre h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sobre-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 10rem;
+}
+
+.sobre-section img {
+  width: 50%;
+}
+
+.sobre-texto {
+  width: 30rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+#tutorialContainer {
+  background-color: var(--verde-escuro);
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  padding-inline: 5rem;
+  padding-block: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+#tutorialContainer h2 {
+  color: var(--branco);
+}
+
+#tutorialFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card-tutorial {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 2rem;
+  background-color: var(--cinza-fundo);
+  transition: 0.2s;
+}
+
+.card-tutorial:hover {
+  scale: 1.2;
+}
+
+.card-tutorial p {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card-tutorial p img {
+  width: 2rem;
+}
+
+.comecar-agora {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.comecar-agora p {
+  font-size: 1.2rem;
+}
+
+#botaoExperimente {
+  background-color: var(--amarelo);
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  width: 20rem;
+  text-align: center;
+  margin-top: 5rem;
+  margin-inline: auto;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+#botaoExperimente:hover {
+  background: linear-gradient(
+    to right,
+    var(--verde-primario),
+    var(--verde-escuro)
+  );
+  color: white;
+}

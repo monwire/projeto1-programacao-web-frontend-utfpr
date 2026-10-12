@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>EcoWatt</title>
+  </head>
+  <body class="pagina-login">
+    <header>
+      <div id="logo">
+        <img src="../assets/icons/logo.svg" alt="Logo EcoWatt" />EcoWatt
+      </div>
+      <div id="navContainer">
+        <nav>
+          <a href="index.html">Início</a>
+          <a href="login.html">Sobre</a>
+          <a href="login.html">Dicas</a>
+          <a href="login.html">Contato</a>
+        </nav>
+
+        <a href="login.html" id="botaoEntrar" class="botao-verde">Entrar</a>
+      </div>
+    </header>
+
+    <div id="loginContainer" class="radial-05">
+      <div id="tituloContainer">
+        <h1>Login</h1>
+        <h2>Acesse sua conta para continuar sua jornada sustentável</h2>
+      </div>
+
+      <form id="formLogin">
+        <label for="emailUsuario">E-mail</label>
+        <input
+          type="email"
+          name="emailUsuario"
+          id="emailUsuario"
+          class="radial-05"
+        />
+        <label for="senhaUsuario">Senha</label>
+        <input
+          type="password"
+          name="senhaUsuario"
+          id="senhaUsuario"
+          class="radial-05"
+        />
+        <div id="lembrarUsuario">
+          <input
+            type="checkbox"
+            name="lembrar"
+            id="lembrar"
+            class="radial-05"
+          />
+          <label for="lembrar">Lembrar de mim</label>
+        </div>
+
+        <div id="loginBtnContainer">
+          <a href="principal.html" id="botaoLogin" class="botao-verde"
+            >Entrar</a
+          >
+          <a href="recuperar-senha.html">Esqueceu sua senha?</a>
+        </div>
+      </form>
+
+      <span class="direcionar-cadastro"
+        >Não tem uma conta? <a href="index.html">Cadastre-se</a></span
+      >
+    </div>
+
+    <div id="principalOpaca">
+      <main>
+        <section id="hero" class="margin-inline-4 radial-05">
+          <div id="heroTexto">
+            <div class="caixa-titulo">ENERGIA LIMPA E ACESSÍVEL</div>
+            <h1>Economize energia, preserve o planeta!</h1>
+            <p>
+              O EcoWatt te ajuda a entender seu consumo de energia e descobrir
+              formas simples de economizar no dia a dia.
+            </p>
+            <div id="heroBotoes">
+              <a href="#" id="botaoComecar" class="botao-verde"
+                >Calcular meus gastos</a
+              >
+              <a href="#"
+                >Saiba mais
+                <img
+                  src="../assets/icons/arrow-forward.svg"
+                  alt="ícone de seta para a direita"
+                  class="icone-botao"
+              /></a>
+            </div>
+          </div>
+          <div id="heroImg">
+            <img
+              src="../assets/figs/placa-solar.jpg"
+              alt="casa com placa solar no telhado"
+            />
+          </div>
+        </section>
+
+        <section id="dicas" class="margin-inline-4">
+          <div class="card radial-05">
+            <img
+              src="../assets/icons/battery-charging.svg"
+              alt="ícone de bateria com carga cheia"
+            />
+            <h2>Economia</h2>
+            <p>Reduza sua conta de luz com pequenas mudanças.</p>
+          </div>
+          <div class="card radial-05">
+            <img src="../assets/icons/leaf.svg" alt="ícone de folha" />
+            <h2>Sustentabilidade</h2>
+            <p>Preserve o meio ambiente para as futuras gerações.</p>
+          </div>
+          <div class="card radial-05">
+            <img src="../assets/icons/home.svg" alt="ícone de casa" />
+            <h2>Conscientização</h2>
+            <p>Informação de qualidade para um consumo melhor.</p>
+          </div>
+        </section>
+
+        <section id="destaques" class="margin-inline-4">
+          <div id="destaquesHeader">
+            <h2>Destaques da semana</h2>
+            <a href="#"
+              >Ver todas
+              <img
+                src="../assets/icons/arrow-forward.svg"
+                alt="ícone de seta para a direita"
+                class="icone-botao"
+            /></a>
+          </div>
+          <div id="grid-destaques">
+            <div class="card-destaque radial-05 sombra">
+              <img
+                src="../assets/figs/analisando-as-contas.jpg"
+                alt="imagem de pessoa segurando um calculadora e analisando contas"
+                class="img-destaque"
+              />
+              <h3>5 formas de economizar em casa</h3>
+              <a href="#"
+                >Leia mais
+                <img
+                  src="../assets/icons/arrow-forward.svg"
+                  alt="ícone de seta para a direita"
+                  class="icone-botao"
+              /></a>
+            </div>
+
+            <div class="card-destaque radial-05 sombra">
+              <img
+                src="../assets/figs/eletrodomesticos.jpg"
+                alt="eletrodomésticos em cima de uma pia de cozinha"
+                class="img-destaque"
+              />
+              <h3>Quais aparelhos mais consomem energia?</h3>
+              <a href="#"
+                >Leia mais
+                <img
+                  src="../assets/icons/arrow-forward.svg"
+                  alt="ícone de seta para a direita"
+                  class="icone-botao"
+              /></a>
+            </div>
+
+            <div class="card-destaque radial-05 sombra">
+              <img
+                src="../assets/figs/luminaria.jpg"
+                alt="luminária acesa"
+                class="img-destaque"
+              />
+              <h3>Iluminação eficiente: mais economia</h3>
+              <a href="#"
+                >Leia mais
+                <img
+                  src="../assets/icons/arrow-forward.svg"
+                  alt="ícone de seta para a direita"
+                  class="icone-botao"
+              /></a>
+            </div>
+
+            <div class="card-destaque radial-05 sombra">
+              <img
+                src="../assets/figs/placa-solar-casa.jpg"
+                alt="telhado de uma casa com placa solar"
+                class="img-destaque"
+              />
+              <h3>Energia solar: vale a pena?</h3>
+              <a href="#"
+                >Leia mais
+                <img
+                  src="../assets/icons/arrow-forward.svg"
+                  alt="ícone de seta para a direita"
+                  class="icone-botao"
+              /></a>
+            </div>
+          </div>
+        </section>
+        <section></section>
+      </main>
+
+      <footer>
+        <div id="footerContainer">
+          <div id="redesSociais">
+            <div id="logoFooter">
+              <img
+                src="../assets/icons/logo-branca.svg"
+                alt="Logo EcoWatt"
+                id="imgLogoFooter"
+              />EcoWatt
+            </div>
+            <p>Por um futuro mais sustentável</p>
+            <div id="redesSociaisIcones">
+              <a href="#"
+                ><img
+                  src="../assets/icons/logo-github.svg"
+                  alt="Ícone do GitHub"
+                  class="icone-rede-social"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../assets/icons/logo-linkedin.svg"
+                  alt="Ícone do Linkedin"
+                  class="icone-rede-social"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../assets/icons/logo-youtube.svg"
+                  alt="Ícone do YouTube"
+                  class="icone-rede-social"
+              /></a>
+            </div>
+          </div>
+          <div id="linksFooter">
+            <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li>
+                <a href="">Objetivos do Desenvolvimento Sustentável (ODS)</a>
+              </li>
+              <a href="#">Curriculum Vitae (CV)</a>
+            </ul>
+          </div>
+          <div id="ods">
+            <img src="../assets/figs/ods-7.svg" alt="ODS7" class="radial-05" />
+            <p>ODS 7 - Energia Limpa e Acessível</p>
+          </div>
+        </div>
+
+        <span
+          >Desenvolvido por <strong>Michel Rodrigues Ferreira</strong>,
+          2026</span
+        >
+      </footer>
+    </div>
+  </body>
+</html>

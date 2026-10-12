@@ -1,0 +1,239 @@
+.pagina-painel {
+  background-color: var(--cinza-fundo);
+}
+
+#painelUsuario {
+  height: 100%;
+  color: var(--verde-escuro);
+  padding-inline: 5rem;
+  padding-block: 3rem;
+  margin-block: 2rem;
+}
+
+#cabecalhoPainel {
+  background-color: var(--cinza-fundo);
+  border: none;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  gap: 1rem;
+}
+
+#cabecalhoPainel a {
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+#cabecalhoPainel a:hover {
+  background-color: rgba(128, 128, 128, 0.13);
+  scale: 1.1;
+}
+
+#calculadoraDisplay {
+  padding: 3rem;
+  margin-top: 2rem;
+  background-color: var(--verde-claro);
+  gap: 5rem;
+  display: flex;
+}
+
+#formCalculadora {
+  padding: 2rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#aparelho,
+#formCalculadora input {
+  width: 30rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: 1px solid var(--cinza-claro);
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: var(--cinza-fundo);
+}
+
+#formCalculadora h1 {
+  display: flex;
+  align-items: center;
+}
+
+#formCalculadora h1 img {
+  width: 40px;
+}
+
+#aparelho:focus {
+  background-color: var(--verde-fundo);
+  border-radius: 0.5rem;
+}
+
+#aparelho option {
+  color: var(--cinza-escuro);
+}
+
+#formCalculadora label {
+  margin-top: 1rem;
+}
+
+#formCalculadora input[type="submit"] {
+  margin-top: 2rem;
+  width: 15rem;
+  transition: 0.5rem;
+}
+
+#formCalculadora input[type="submit"]:hover {
+  scale: 1.05;
+}
+
+#botaoCalcular {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  gap: 1rem;
+  transition: 0.5s;
+}
+
+#botaoCalcular img {
+  width: 30px;
+}
+
+#botaoCalcular:hover {
+  scale: 1.05;
+}
+
+#itens {
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--branco);
+  display: flex;
+  flex-direction: column;
+}
+
+#itens h2 {
+  margin-bottom: 2rem;
+}
+
+#listaItens {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 12px 0 var(--cinza-claro);
+}
+
+.item-aparelho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.acoes img {
+  width: 2rem;
+  margin-left: auto;
+  transition: 0.5s;
+}
+
+.acoes img:hover {
+  cursor: pointer;
+  scale: 1.5;
+}
+
+.caracteristicas div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.caracteristicas div img {
+  width: 2rem;
+}
+
+.nome-aparelho p {
+  margin-left: 2rem;
+}
+
+#resultado {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: var(--amarelo-claro);
+}
+
+.consumo-diario-estimado,
+.consumo-mensal-estimado,
+#dica {
+  display: flex;
+}
+
+.icone-res img {
+  width: 3rem;
+  margin-right: 2rem;
+}
+
+.texto-res p {
+  font-weight: 400;
+}
+
+.valor-res {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.grid-resultado {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+  width: 65rem;
+}
+
+.card-resultado {
+  display: flex;
+  padding: 2rem;
+  width: 30rem;
+  background-color: var(--cinza-fundo);
+}
+
+#dica {
+  background-color: var(--amarelo-medio);
+  padding-inline: 0.5rem;
+  padding-block: 1rem;
+}
+
+.titulo-dica-resultado {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+economia {
+  font-weight: bold;
+}
+
+.aviso {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  background-color: var(--verde-fundo);
+}
+
+.aviso h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.aviso h3 img {
+  width: 30px;
+}

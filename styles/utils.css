@@ -1,0 +1,49 @@
+.icone-botao {
+  width: 1.25rem;
+}
+
+.caixa-titulo {
+  border: none;
+  background-color: var(--verde-claro);
+  color: var(--verde-secundario);
+  font-weight: bold;
+  width: fit-content;
+  padding: 0.3rem;
+  border-radius: 0.25rem;
+}
+
+.botao-verde {
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--verde-primario);
+  color: var(--branco) !important;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+}
+
+.botao-verde:hover {
+  cursor: pointer;
+  background-color: var(--verde-escuro);
+}
+
+.margin-inline-4 {
+  margin-inline: 4rem;
+  margin-block: 2rem;
+}
+
+.radial-05 {
+  border-radius: 0.5rem;
+}
+
+.sombra {
+  box-shadow: 4px 4px 8px 0px var(--cinza-claro);
+}
+
+.imagem-vertical {
+  height: 80vh;
+}
+
+.selecionado {
+  border-bottom: 2px solid var(--verde-primario);
+}

@@ -1,0 +1,96 @@
+.pagina-login header {
+  box-shadow: 0px 4px 8px 0px var(--cinza-claro);
+}
+
+#loginContainer {
+  background-color: var(--cinza-fundo);
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  margin-inline: auto;
+  margin-block: 10rem;
+  align-items: center;
+  gap: 3rem;
+  padding-block: 5rem;
+  box-shadow: 0px 0px 8px 0px var(--verde-primario);
+}
+
+#tituloContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30rem;
+  text-align: center;
+}
+
+#tituloContainer h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+#formLogin {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+}
+
+#formLogin label {
+  font-size: 1.1rem;
+  color: var(--verde-escuro);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+#formLogin input {
+  border: 1px solid var(--cinza-claro);
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  outline: none;
+}
+
+#formLogin input:focus {
+  border: 1px solid var(--verde-secundario);
+}
+
+#formLogin input[type="checkbox"] {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#loginBtnContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#botaoLogin {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#loginBtnContainer a:nth-child(2) {
+  text-decoration: underline;
+  margin-top: 1rem;
+}
+
+#loginBtnContainer a:nth-child(2):hover {
+  color: var(--verde-secundario);
+}
+
+.direcionar-cadastro a:hover {
+  color: var(--verde-secundario);
+}
+
+#principalOpaca {
+  background-color: var(--cinza-fundo);
+  position: absolute;
+  top: 3.25rem;
+  z-index: -1;
+  filter: blur(4px);
+}

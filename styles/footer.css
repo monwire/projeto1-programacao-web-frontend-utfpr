@@ -1,0 +1,92 @@
+footer {
+  padding: 1rem;
+  background-color: var(--verde-escuro);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem;
+  padding-block: 6rem;
+  padding-inline: 2rem;
+}
+
+#redesSociais {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#redesSociais p {
+  color: var(--branco);
+  text-align: center;
+  font-weight: 100;
+}
+
+#logoFooter {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#logoFooter img {
+  width: 50px;
+}
+
+#redesSociaisIcones {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#redesSociaisIcones a > img:hover {
+  scale: 1.2;
+}
+
+a img {
+  width: 30px;
+}
+
+#linksFooter ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#linksFooter a {
+  color: var(--branco);
+}
+
+#linksFooter a:hover {
+  color: var(--amarelo);
+}
+
+#ods {
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 20rem;
+}
+
+#ods p {
+  color: var(--branco);
+  font-weight: 300;
+}
+
+#ods img {
+  width: 10rem;
+}
+
+footer span {
+  font-weight: 100;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
