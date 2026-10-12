@@ -1,6 +1,6 @@
 <div align="center" style="background-color: #0d6e4f; padding: 1rem;">
 
-<img src="assets/icons/logo-branca.svg" alt="Logo EcoWatt" width="50">
+<img src="assets/icons/logo.svg" alt="Logo EcoWatt" width="50">
 
 # EcoWatt
 
