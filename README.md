@@ -104,6 +104,10 @@ Por esse motivo, a calculadora demonstra apenas o comportamento visual previsto 
 
 </div>
 
+## Validação do código com W3
+
+
+
 ## Desenvolvedor
 
 **Michel R. Ferreira**
