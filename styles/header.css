@@ -64,3 +64,40 @@ nav a:hover {
 #botaoEntrar {
   margin-right: 1rem;
 }
+
+#nav_buttons {
+  display: flex;
+  align-items: center;
+}
+
+.system-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--surface);
+}
+
+#adm_btn {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding-inline: 1rem;
+  padding-block: 0.75rem;
+  transition: 0.2s;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+}
+
+#adm_btn:hover {
+  cursor: pointer;
+  color: var(--primary-dark);
+  scale: 1.1;
+}
+
+#adm_btn img {
+  width: 20px;
+}
+
+#adm_btn span {
+  color: var(--surface);
+}

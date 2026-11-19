@@ -33,10 +33,10 @@
 }
 
 #calculadoraDisplay {
-  padding: 3rem;
+  padding-block: 3rem;
+  padding-right: 5rem;
   margin-top: 2rem;
   background-color: var(--verde-claro);
-  gap: 5rem;
   display: flex;
 }
 
@@ -110,7 +110,7 @@
 }
 
 #itens {
-  width: 100%;
+  width: 60%;
   padding: 2rem;
   background-color: var(--branco);
   display: flex;

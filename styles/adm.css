@@ -1,0 +1,256 @@
+main h1 {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--branco);
+  margin-inline: 5rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container label {
+  line-height: 2;
+  font-size: 1.3rem;
+  color: var(--cinza-medio);
+}
+
+input[type="text"],
+input[type="email"] {
+  font-size: 1.2rem;
+  padding-inline: 1rem;
+  padding-block: 0.8rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 1px solid var(--cinza-claro);
+  color: var(--cinza-escuro);
+}
+
+input[type="text"]:focus-within,
+input[type="email"]:focus-within {
+  border: 1px solid var(--oceano);
+}
+
+input::placeholder {
+  color: var(--cinza-medio);
+}
+
+#buttons_container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+input[type="submit"] {
+  width: 200px;
+  font-size: 1.2rem;
+  padding-block: 0.7rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--verde-primario);
+  color: var(--branco);
+  transition: 0.2s;
+}
+
+#clear_input_btn {
+  padding-inline: 1rem;
+  font-size: 1.2rem;
+  padding-block: 0.7rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--cinza-escuro);
+  background-color: var(--branco);
+  transition: 0.2s;
+}
+
+#clear_input_btn img {
+  width: 1.5rem;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: var(--verde-escuro);
+}
+
+#clear_input_btn:hover {
+  cursor: pointer;
+  background-color: var(--verde-claro);
+}
+
+#dashboard {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  margin-inline: 5rem;
+  margin-bottom: 10rem;
+}
+
+#dashboard h2 {
+  margin-bottom: 2rem;
+}
+
+#dashboard_info {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--branco);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+#users_sum {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--verde-primario);
+}
+
+#dashboard_info p {
+  font-size: 0.9rem;
+  color: var(--cinza-medio);
+}
+
+#users_list {
+  list-style-type: none;
+  padding-block: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: var(--branco);
+  padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#list_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cinza-claro);
+  background-color: var(--branco);
+  padding: 1rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+#list_header h3 {
+  width: 30%;
+}
+
+#search_field {
+  display: flex;
+  align-items: center;
+  padding-inline: 0.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 1px solid var(--cinza-claro);
+  width: 50%;
+  margin-left: auto;
+}
+
+#search_field:focus-within {
+  border: 1px solid var(--verde-primario);
+}
+
+#search_field img {
+  width: 1.5rem;
+}
+
+#search_field img:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+
+#search_field input {
+  border: none;
+  font-size: 1rem;
+  width: 100%;
+  color: var(--cinza-medio);
+}
+
+.listed-user {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--cinza-claro);
+}
+
+.user-data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.user-name {
+  font-weight: 600;
+}
+
+.user-email {
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: var(--cinza-medio);
+}
+
+.actions {
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions img {
+  width: 1.5rem;
+}
+
+.actions img:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+#list_nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+#search_all_btn {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  color: var(--verde-primario);
+  font-weight: bold;
+}
+
+#search_all_btn img {
+  width: 1rem;
+}
+
+#search_all_btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#remove_all_btn {
+  font-weight: bold;
+  color: var(--vermelho);
+}
+
+#remove_all_btn:hover {
+  cursor: pointer;
+  color: var(--amarelo);
+}

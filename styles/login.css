@@ -42,7 +42,9 @@
 #formLogin {
   display: flex;
   flex-direction: column;
+  gap: unset;
   width: 25rem;
+  background-color: var(--cinza-fundo);
 }
 
 #formLogin label {
